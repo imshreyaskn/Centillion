@@ -22,7 +22,7 @@ func main() {
 
 	//For-Range Loop
 
-	names := []string{"mario", "yoshi", "peach"}
+	names := []string{"santhosh", "shreyas", "niranjan"}
 
 	for index, value := range names {
 		fmt.Printf("The Value: %v. The Index: %v \n", value, index)
@@ -46,6 +46,21 @@ func main() {
 		}
 		fmt.Println(z)
 		z++
+	}
+
+	//Contine and Break key
+
+	m := 0
+
+	for {
+		if m == 3 {
+			continue //skips the num 3
+		} else if m == 5 {
+			break //Breaks the loop when m = 5
+		}
+
+		fmt.Println(m)
+		m++
 	}
 
 }
