@@ -17,11 +17,21 @@ func math() {
 
 	val1str, _ := reader.ReadString('\n')
 	val1str = strings.TrimSpace(val1str)
-	val1, _ := strconv.ParseFloat(val1str, 64)
+	val1, val1err := strconv.ParseFloat(val1str, 64)
+
+	if val1err != nil {
+		fmt.Println("Err,Invalid Value")
+		return
+	}
 
 	val2str, _ := reader.ReadString('\n')
 	val2str = strings.TrimSpace(val2str)
-	val2, _ := strconv.ParseFloat(val2str, 64)
+	val2, val2err := strconv.ParseFloat(val2str, 64)
+
+	if val2err != nil {
+		fmt.Println("Err,Invalid Value")
+		return
+	}
 
 	switch strings.ToLower(method) {
 	case "add":
