@@ -4,6 +4,7 @@ import (
 	"bufio"
 	"fmt"
 	"os"
+	"strconv"
 	"strings"
 )
 
@@ -14,15 +15,15 @@ func math() {
 	method, _ := reader.ReadString('\n')
 	method = strings.TrimSpace(method)
 
-	var val1 int
-	var val2 int
+	val1str, _ := reader.ReadString('\n')
+	val1str = strings.TrimSpace(val1str)
+	val1, _ := strconv.ParseFloat(val1str, 64)
 
-	fmt.Print("Enter the first val:")
-	_, _ = fmt.Scanln(&val1)
-	fmt.Print("Enter the second val:")
-	_, _ = fmt.Scanln(&val2)
+	val2str, _ := reader.ReadString('\n')
+	val2str = strings.TrimSpace(val2str)
+	val2, _ := strconv.ParseFloat(val2str, 64)
 
-	switch strings.ToLower(method) { // make it case-insensitive
+	switch strings.ToLower(method) {
 	case "add":
 		fmt.Println("Result:", val1+val2)
 	case "subtract":
