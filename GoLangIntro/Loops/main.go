@@ -9,7 +9,6 @@ func main() {
 	//While Loop
 
 	x := 0
-
 	for x < 5 {
 		fmt.Println(x)
 		x++
@@ -23,7 +22,6 @@ func main() {
 	//For-Range Loop
 
 	names := []string{"santhosh", "shreyas", "niranjan"}
-
 	for index, value := range names {
 		fmt.Printf("The Value: %v. The Index: %v \n", value, index)
 	}
@@ -39,7 +37,6 @@ func main() {
 	//Infinte loop
 
 	z := 0
-
 	for {
 		if z > 5 {
 			break
@@ -51,14 +48,12 @@ func main() {
 	//Contine and Break key
 
 	m := 0
-
 	for {
 		if m == 3 {
 			continue //skips the num 3
 		} else if m == 5 {
 			break //Breaks the loop when m = 5
 		}
-
 		fmt.Println(m)
 		m++
 	}
