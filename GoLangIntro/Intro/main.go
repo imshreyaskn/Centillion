@@ -26,7 +26,7 @@ func main() {
 	//Arrays
 
 	var ages [3]int = [3]int{20, 25, 30}
-	names := [3]string{"Mario", "Yoshi", "Lucy"}
+	names := [3]string{"Remy", "David", "Lucy"}
 
 	fmt.Println(len(ages))
 

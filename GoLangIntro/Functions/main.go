@@ -9,14 +9,10 @@ func main() {
 	x := 10
 	y := 20
 	names := []string{"Santhosh", "Shreyas", "Niranjan"}
-
 	fmt.Println(add(x, y))
 	fmt.Println(sub(x, y))
-
 	greet(names, greetHelper)
-
 	firstInitial, secondIntial := getInitial("Adithya Varma")
-
 	fmt.Printf("First Initial: %v. Second Initial: %v.", firstInitial, secondIntial)
 }
 
@@ -34,7 +30,6 @@ func greet(names []string, helperFunc func(name string)) {
 		helperFunc(name)
 	}
 }
-
 func greetHelper(name string) {
 	fmt.Printf("Welcome to da club, %v.\n", name)
 }
