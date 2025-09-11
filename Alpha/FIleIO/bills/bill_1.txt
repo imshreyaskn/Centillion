@@ -1,0 +1,6 @@
+Bill ID: 1
+Bill Breakdown:
+choco:               ...$40
+soup:                ...$100
+tip:                 ...$10.00
+total:               ...$150.00
